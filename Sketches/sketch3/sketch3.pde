@@ -11,7 +11,7 @@ class Person{
   }
   
   String giveMeYourName(){
-  return.name;
+  return name;
   }
   
   void sayYeah(){
@@ -19,9 +19,11 @@ class Person{
   }
 }
 
-void sayYeah(){
-
+void setup(){
+  Person peter = new Person("Peter","cheese",75);
+  peter.sayYeah();
   
-
+  Person xinxin = new Person("xinxin","spring rolls",55);
+  println(xinxin.giveMeYourName());
 }
 
